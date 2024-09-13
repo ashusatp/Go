@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func counter() func() int {
 	var count int = 0
 
@@ -10,5 +12,6 @@ func counter() func() int {
 }
 
 func main() {
-
+	increment := counter()
+	fmt.Println(increment())
 }
