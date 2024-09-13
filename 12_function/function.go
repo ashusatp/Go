@@ -64,6 +64,7 @@ func main() {
 	fmt.Println(add(2, 3)) // Output: 5
 
 	// Variadic Functions
-	fmt.Println(sum(1, 2, 3))       // Output: 6
-	fmt.Println(sum(4, 5, 6, 7, 8)) // Output: 30
+	nums := []int{4, 5, 6, 7, 8}
+	fmt.Println(sum(1, 2, 3)) // Output: 6
+	fmt.Println(sum(nums...)) // Output: 30
 }
