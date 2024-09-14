@@ -57,10 +57,19 @@ func main() {
 		Age   int
 		Email string
 	}{
-		Name:  "Jane Doe",
-		Age:   28,
-		Email: "janedoe@example.com",
+		"Jane Doe",
+		28,
+		"janedoe@example.com",
 	}
+	// person := struct {
+	// 	Name  string
+	// 	Age   int
+	// 	Email string
+	// }{
+	// 	Name:  "Jane Doe",
+	// 	Age:   28,
+	// 	Email: "janedoe@example.com",
+	// }
 	fmt.Println(person)
 
 }
